@@ -27,11 +27,6 @@ public class Shield {
             System.out.println(elder.getName());
         }
 
-        System.out.println("\nElders:");
-        for (Hero elder : elders) {
-            System.out.println(elder.getName());
-        }
-
         Predicate<Hero> isGlutenIntolerant = Hero::isGlutenIntolerant;
         List<Hero> intolerants = heroes.stream()
                 .filter(isGlutenIntolerant)
